@@ -26,7 +26,7 @@ jobs:
 
     - name: Run API tests
       env:
-        X_API_KEY: ${{ secrets.API_KEY }}
+        X_API_KEY: ${{ secrets.X_API_KEY }}
         API_URL: ${{ secrets.API_URL }}
       run: |
         python python_scripts/test_requests.py
